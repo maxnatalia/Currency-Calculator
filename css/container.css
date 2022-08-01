@@ -1,0 +1,53 @@
+.container__header {
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: #49504e;
+    border-radius: 15px;
+    padding: 10px;
+    border-style: double;
+    background-attachment: scroll;
+    color: #d6d9db;
+}
+
+.container__paragraph {
+    border-style: double;
+    border-radius: 15px;
+    padding: 20px;
+    font-weight: 400;
+    background-color: #ebebeb;
+    text-align: left;
+    font-size: 16px;
+}
+
+.container__paragraph--result {
+    border-style: double;
+    border-radius: 15px;
+    padding: 20px;
+    font-weight: 700;
+    background-color: #49504e;
+    text-align: center;
+    font-size: 18px;
+    color: #d6d9db;
+}
+
+.container__button {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #49504e;
+    border-radius: 15px;
+    padding: 10px;
+    border-style: solid;
+    margin-bottom: 30px;
+    color: #d6d9db;
+}
+
+.container__button:hover {
+    background-color: hsl(163, 5%, 40%);
+}
+
+.container__input {
+    padding: 10px;
+}

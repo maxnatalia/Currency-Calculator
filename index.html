@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator walutowy</title>
+    <link rel="icon" href="images/Currency Calculator.png">
+    <meta property="og:image" content="images/currencycalculatorshare.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/body.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <link href="css/exchange.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="container__header">Kalkulator walutowy</h1>
+        <p class="container__paragraph">Pola oznaczone * są wymagane.</p>
+
+        <form class="form js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Kalkulator walutowy</legend>
+                <p>
+                    <label><span class="form__labelText">Kwota w PLN*:</span><input class="form__field js-amount"
+                            type="number" step="0.01" min="0" name="amount" required autofocus
+                            placeholder="wpisz kwotę w PLN">
+                    </label>
+                </p>
+                <label><span class="form__labelText">Wybierz walutę*:</span>
+                    <select class="form__field form__field--select js-currency" name="currency" required>
+                        <option selected></option>
+                        <option value="EUR">EUR-euro</option>
+                        <option value="USD">USD-dolar amerykański</option>
+                        <option value="CHF">CHF-frank szwajcarski</option>
+                    </select>
+                </label>
+                <p>
+                    <label>
+                        <span class="form__labelText">Wybierz date pobrania kursu:</span><input
+                            class="form__field form__field--hover js-date" name="date" placeholder="pokaż kalendarz">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="form__labelText">Data pobrania kursu:</span><input class="form__field" name="date"
+                            readonly value="2022-07-28">
+                    </label>
+                </p>
+                <div class="exchange js-exchange">
+                    <p>EUR - 4,7552<br>USD - 4,6916<br> CHF - 4,8739</p>
+                </div>
+                <p><button type="button" class="exchange__button js-exchangeButton">Pokaż aktualne kursy:</button></p>
+            </fieldset>
+            <p><button class="form__button">POLICZ TERAZ!</button></p>
+        </form>
+        <p class="container__paragraph--result">Wynik: <strong class="js-result"> N/A</strong></p>
+        <div>
+            <p class="container__paragraph">Jeśli nie znalazłeś odpowiedniej waluty do przeliczenia to poszukaj w poniższej wyszukiwarce:</p>
+            <form action="https://google.com/search"><input class="container__input" name="q">
+                <button class="container__button" title="Strona google.com">Szukaj</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        flatpickr(".js-date", {
+            enable: ["2022-07-28", new Date(2025, 8, 9)]
+        });
+    </script>
+    
+</body>
+
+</html>

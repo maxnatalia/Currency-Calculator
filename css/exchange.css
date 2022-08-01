@@ -1,0 +1,23 @@
+.js-exchange {
+    display: none;
+    font-size: 18px;
+}
+
+.exchange__button {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #49504e;
+    border-radius: 15px;
+    padding: 20px;
+    border-style: solid;
+    color: #d6d9db; 
+}
+
+.exchange__button:hover {
+    background-color: hsl(163, 5%, 40%);
+}
+
+.exchange__button:active {
+    background-color: hsl(163, 5%, 50%);
+}
