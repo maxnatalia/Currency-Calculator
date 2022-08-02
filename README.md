@@ -25,5 +25,5 @@ Furthermore, you can use the web search engine - **Google**.
 - CSS
 - JavaScript
 - BEM convention
-- ES6
+- ES6+features
 
