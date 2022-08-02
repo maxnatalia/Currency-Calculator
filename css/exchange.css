@@ -1,8 +1,7 @@
-.js-exchange {
+.exchange {
     display: none;
-    font-size: 18px;
 }
-
+ 
 .exchange__uppercase {
     text-transform: uppercase;
 }
