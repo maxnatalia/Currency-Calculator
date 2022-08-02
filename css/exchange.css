@@ -3,6 +3,10 @@
     font-size: 18px;
 }
 
+.exchange__uppercase {
+    text-transform: uppercase;
+}
+
 .exchange__button {
     text-align: center;
     font-size: 18px;
@@ -11,7 +15,8 @@
     border-radius: 15px;
     padding: 20px;
     border-style: solid;
-    color: #d6d9db; 
+    color: #d6d9db;
+    text-transform: uppercase;
 }
 
 .exchange__button:hover {
